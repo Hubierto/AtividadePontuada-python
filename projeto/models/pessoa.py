@@ -1,5 +1,5 @@
 from abc import ABC
-from .endereco import Endereco
+from projeto.models.endereco import Endereco
 
 class Pessoa(ABC):
 

@@ -1,6 +1,6 @@
 from enum import Enum
 
-class EstadoCiil(Enum):
+class EstadoCivil(Enum):
 
     SOLTEIRO =("Solteiro")
     CASADO =  ("Casado")
