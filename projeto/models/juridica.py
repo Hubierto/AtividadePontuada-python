@@ -1,6 +1,6 @@
 from abc import ABC
-from models.endereco import Endereco
-from models.pessoa import Pessoa
+from projeto.models.endereco import Endereco
+from projeto.models.pessoa import Pessoa
 
 class juridica(Pessoa, ABC):
 

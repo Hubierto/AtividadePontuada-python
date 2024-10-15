@@ -9,6 +9,6 @@ from projeto.models.enums.unidadefederativa import UnidadeFederativa
 
 os.system("cls || clear")
 
-fornecedor1 = Fornecedor(9009, "Lucaas", "71 9 87876565", "L@gmail.com", Endereco("praça do sol", "097", "I","47856983", "Salvador", UnidadeFederativa.BAHIA), "14268568", "068659", "Chocolate")
+fornecedor1 = Fornecedor(111, "Miguel", "71923232323", "M@gmail.com", Endereco("Praça das núvens", "001", "L", "0121213", "Sei lá", UnidadeFederativa.RIO_DE_JANEIRO), "983815634", "0828495", "Abacate" )
 
 print(fornecedor1)

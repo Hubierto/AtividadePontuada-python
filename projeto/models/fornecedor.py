@@ -9,7 +9,7 @@ class Fornecedor(juridica):
 
     def __str__(self) -> str:
         return(
-               f"{super().__str__()}" 
+               f"\n{super().__str__()}" 
                f"\nID: {self.id}"  
                f"\nNome: {self.nome}"  
                f"\nTelefone: {self.telefone}"  
