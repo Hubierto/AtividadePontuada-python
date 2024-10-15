@@ -33,26 +33,26 @@ def test_mudar_email_valido(pessoa_valida):
     assert pessoa_valida.email == "e@gmail.com"
 
 def test_id_negativo():
-    with pytest.raises(ValueError, match="ID negativo!"):
-        Pessoa(12345, "Rúben", "71988887777", "ruben@gmail.com",Endereco)
+    with pytest.raises(ValueError, match="ID deve ser positivo!"):
+        Pessoa(-12345, "Rúben", "71988887777", "ruben@gmail.com",Endereco)
  
 def test_id_tipo_invalido():
     with pytest.raises(TypeError, match="ID inválido!"):
-        Pessoa(12345, "Rúben", "71988887777", "ruben@gmail.com",Endereco)
+        Pessoa("12345", "Rúben", "71988887777", "ruben@gmail.com",Endereco)
  
 def test_nome_tipo_invalido():
     with pytest.raises(TypeError, match="Nome inválido!"):
-        Pessoa(12345, "Rúben", "71988887777", "ruben@gmail.com",Endereco)
+        Pessoa(12345, 000, "71988887777", "ruben@gmail.com",Endereco)
  
 def test_nome_vazio():
-    with pytest.raises(TypeError, match="Nome vazio!"):
-        Pessoa(12345, "Rúben", "71988887777", "ruben@gmail.com",Endereco)
+    with pytest.raises(TypeError, match="Nome não pode ser vazio!"):
+        Pessoa(12345, "", "71988887777", "ruben@gmail.com",Endereco)
  
 def test_numero_tipo_valido():
     with pytest.raises(TypeError, match="Telefone inválido!"):
-        Pessoa(12345, "Rúben", "71988887777", "ruben@gmail.com",Endereco)
+        Pessoa(12345, "Rúben", 71988887777, "ruben@gmail.com",Endereco)
  
 def test_email_tipo_valido():
     with pytest.raises(TypeError, match="Email inválido!"):
-        Pessoa(12345, "Rúben", "71988887777", "ruben@gmail.com",Endereco)
+        Pessoa(12345, "Rúben", "71988887777", 123,Endereco)
  

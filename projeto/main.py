@@ -1,12 +1,11 @@
 import os
 import sys
 
-sys.path.append(os.path.abspath('.'))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from projeto.models.fornecedor import Fornecedor
 from projeto.models.endereco import Endereco
 from projeto.models.enums.unidadefederativa import UnidadeFederativa
-
 
 os.system("cls || clear")
 

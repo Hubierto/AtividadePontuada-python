@@ -42,7 +42,7 @@ class Pessoa(ABC):
 
     def _verificar_nome_vazio(self, valor):
         if not valor.strip():
-            raise ValueError("Nome não pode ser vazio!")
+            raise TypeError("Nome não pode ser vazio!")
 
     def _verificar_telefone_tipo_invalido(self, valor):
         if not isinstance(valor, str):
