@@ -1,7 +1,6 @@
 import pytest
-from models.juridica import Juridica
+from projeto.models.juridica import Juridica
 from projeto.models.endereco import Endereco
-from projeto.models.enums.unidadefederativa import UnidadeFederativa
 
 @pytest.fixture
 def juridica_valido():

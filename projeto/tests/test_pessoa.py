@@ -1,7 +1,6 @@
 import pytest
 from projeto.models.pessoa import Pessoa
 from projeto.models.endereco import Endereco
-from projeto.models.enums.unidadefederativa import UnidadeFederativa
 
 @pytest.fixture
 def pessoa_valida():
