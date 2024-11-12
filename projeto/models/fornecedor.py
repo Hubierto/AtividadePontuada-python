@@ -1,7 +1,7 @@
 from projeto.models.endereco import Endereco
-from projeto.models.juridica import juridica
+from projeto.models.juridica import Juridica
 
-class Fornecedor(juridica):
+class Fornecedor(Juridica):
 
     def __init__(self, id: int, nome: str, telefone: str, email: str, endereco: Endereco, cnpj: str, inscricaoestadual: str, produto: str) -> None:
         super().__init__(id, nome, telefone, email, endereco, cnpj, inscricaoestadual)
