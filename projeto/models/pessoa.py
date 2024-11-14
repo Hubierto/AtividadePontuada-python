@@ -51,3 +51,10 @@ class Pessoa(ABC):
     def _verificar_email_tipo_invalido(self, valor):
         if not isinstance(valor, str):
             raise TypeError("Email inválido!")
+        
+    def __str__(self) -> str:
+        return (f"\nId: {self.id}"
+                f"\nNome: {self.nome}"
+                f"\nTelefone: {self.telefone}"
+                f"\nEmail: {self.email}"
+                f"\nEndereço: {self.endereco}") 
