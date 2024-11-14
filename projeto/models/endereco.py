@@ -65,4 +65,4 @@ class Endereco:
                 f"\nComplemento: {self.complemento}"
                 f"\nCep: {self.cep}"
                 f"\nCidade: {self.cidade}"
-                f"\nUnidade Federativa: {self.uf}")
+                f"\nUF: {self.uf}")
